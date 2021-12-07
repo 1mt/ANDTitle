@@ -1,5 +1,5 @@
 /** @jsx React.DOM */
-import ANDLogo from './ANDLogo.png'
+
 
 'use strict';
 
@@ -53,7 +53,7 @@ var ChatBox = React.createClass({
       <div className="chat-box" ref="root">
         <div className="chat-header ui-widget-header">
           What is your AND Title?
-          <img src={ANDLogo}/>
+          
         </div>
       
         <div className="chat-content-wrapper row">
