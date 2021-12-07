@@ -1,4 +1,5 @@
 /** @jsx React.DOM */
+import ANDLogo from './ANDLogo.png'
 
 'use strict';
 
@@ -50,7 +51,11 @@ var ChatBox = React.createClass({
   render: function () {
     return (
       <div className="chat-box" ref="root">
-        <div className="chat-header ui-widget-header">What is your AND Title?</div>
+        <div className="chat-header ui-widget-header">
+          What is your AND Title?
+          <img src={ANDLogo}/>
+        </div>
+      
         <div className="chat-content-wrapper row">
           <MessagesList ref="messagesList"></MessagesList>
           <UsersList users={this.state.users} ref="usersList"></UsersList>
